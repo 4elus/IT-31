@@ -17,6 +17,16 @@ slick.js - С помощью данного файла работает слай
 
 script.js - В этом файле мы описываем весь наш JS код.
 
-header.html и footer.html  -  подключается к .php файлам с помощью метод includ('name.html') 
+header.html и footer.html  -  подключается к .php файлам с помощью метода include('name.html') 
 
 index.php - является основной страницей сайта.
+
+ПО
+
+1) OpenServer достаточно версии 'Basic' (https://ospanel.io/download/)
+2) IDE:
+		1) PhpStorm (https://www.jetbrains.com/phpstorm/download/#section=windows)
+		2) Sublime Text (https://www.sublimetext.com/3)
+		3) Brackets (http://brackets.io/)
+		
+3) GitBash для работы с гит репозиторием (https://www.youtube.com/watch?v=PEKN8NtBDQ0)
