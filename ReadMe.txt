@@ -32,11 +32,19 @@ slick.js - С помощью данного файла работает слай
 script.js - В этом файле мы описываем весь наш JS код.
 
 header.html и footer.html  -  подключается к .php файлам с помощью метода include('name.html') 
+<<<<<<< HEAD
 
 index.php - является основной страницей сайта.
 
 ПО
 
+=======
+
+index.php - является основной страницей сайта.
+
+ПО
+
+>>>>>>> 0824764d3f6d9f1f5b94e1908c710e7bb2c47806
 1) OpenServer достаточно версии 'Basic' (https://ospanel.io/download/)
 2) IDE:
 		1) PhpStorm (https://www.jetbrains.com/phpstorm/download/#section=windows)
