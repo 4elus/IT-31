@@ -2,7 +2,6 @@
 require "db.php"; // подключаем файл базы данных
 include('header.html');
 
-
 $data = $_POST; 
 
 if( isset($data['do_signup']))
@@ -19,12 +18,19 @@ if( isset($data['do_signup']))
         $errors[] = 'Введите пароль!';
     }
     
+    if(strlen($data['password']) <= 4)
+    {
+        $errors[] = 'Пароль должен быть 5 или больше символов ';
+    }
+    
     if($data['rePassword'] != $data['password'])
     {
         $errors[] = 'Пароль не совпадает!';
     }
-     if($_POST['check'] != $_POST['random'])
+     if($_POST['check'] != $_POST['random1'])
     {
+		print_r($_POST);
+		echo "<br>" . $_POST['check'] . " = " . $_POST['random1'];
         $errors[] = "Капча неверна !";
     }
     
@@ -104,12 +110,16 @@ if( isset($data['do_signup']))
                         <!--//Ниже реализация капчи.-->
                         
                         <div class="form-group">
-                            <input type="text" name="random"  disabled value="<?php echo "Введите капчу: " . $captcha = rand(1000,9999); ?>">
+                            <input type="hidden" name="random1"  value="<?php echo $captcha1 = rand(1000,9999);?>">
                         </div>
                         
-                        <div class="form-group">
+                        <p><?php echo $captcha1 ;?></p>
+                        
+                        
+                           <div class="form-group">
                             <input type="text" name="check" class="form-control input-lg" placeholder="Введите капчу">
                         </div>
+                        
                         
                         <!--//Конец реализации капчи.-->
                         
