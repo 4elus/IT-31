@@ -84,7 +84,9 @@ if( isset($data['do_login']))
                             <div class="form-group">
                                 <input type="password" name="password" class="form-control input-lg" placeholder="Ваш пароль">
                             </div>
-
+                            
+                            <a href="fogotPassword.php">Забыл пароль</a>
+                            
                             <button type="submit" name="do_login" class="btn btn-primary pull-right">Вход</button>
                         </form>
                     </div>
